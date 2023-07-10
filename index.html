@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Depression Detection</title>
+    </head>
+    <style>
+
+        *{
+            color: black;
+            font-family: sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        body{
+            background-image: url("https://img.freepik.com/premium-photo/dark-street-background-reflection-blue-red-neon-asphalt_129911-31.jpg?w=360");
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*font-family: 'Zeyada', cursive;*/
+            font-family: 'Babylonica', cursive;/*
+            font-family: 'Sassy Frass', cursive;*/
+            color : white;
+        }
+        .cam{
+            padding: 20px;
+        }
+        .video{
+            margin: 0% 80%;
+        }
+        h1{
+            font-size: 30px;
+            color: white;
+        }
+
+        .box{
+            width: 300px;
+            height: 50px;
+            background-color: rgb(255, 255, 255,0.8);
+            padding-top: 15px;
+            margin: 3%;
+            text-align: center;
+            border-radius: 15px;
+        }
+    </style>
+<body>        
+    <center>
+        <h1>Depression Detection</h1>
+        <div class="box">
+        <label>Temperature  : </label>{{Temp}}<br><br>
+        </div>
+        <div class="box">
+        <label>Heart rate   : </label>{{Heart}}<br><br>
+    </div>
+    <div class="box">
+        <label>GSR          : </label>{{Gsr}}<br><br>
+    </div>
+    <div class="box">
+        <label>Condition-status   : </label>{{Dep}}<br><br>
+    </div>
+        <p><label style="color: white;">Recommentation:</label></p>
+
+        <!-- <textarea rows="4" cols="50">{{pred}}</textarea> -->
+        <div class="box">
+            <h3>{{pred}}</h3>
+        </div>
+
+
+  <br>
+    </center>
+    <!-- <sctipt>
+        setTimeout(function(){
+           window.location.reload();
+        }, 5000);
+    </script> -->
+</body>
+
+
+    
+</html>
